@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Form Widgets</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui segment">
+        <h1>Form Widgets</h1>
+      </div>
+      <div class="ui segment">
+        <h2>Text input fields</h2>
+        <div class="text-field-input">
+          <label for="text-field-input">text field</label>
+          <input
+            type="text"
+            id="comment"
+            name="comment"
+            value="I'm a text field"
+          />
+        </div>
+        <br />
+        <div class="email-input">
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" multiple />
+        </div>
+        <br />
+        <div class="search-input">
+          <label for="search-input">search</label>
+          <input type="search" id="search" name="search" />
+        </div>
+        <br />
+        <div class="phone-number-input">
+          <label for="phone-number-input">phone number</label>
+          <input type="tel" id="tel" name="tel" />
+        </div>
+        <br />
+        <div class="url-field-input">
+          <label for="url-field-input">url field</label>
+          <input type="url" id="url" name="url" />
+        </div>
+        <br />
+        <div class="text-area-input">
+          <label for="text-area-input">text area</label>
+          <textarea cols="30" rows="5"></textarea>
+        </div>
+      </div>
+      <br />
+      <div class="ui segment">
+        <h2>Drop-down content</h2>
+        <div class="drop-down-content">
+          <label for="drop-down-content">drop down content</label>
+          <select id="simple" name="simple">
+            <option>Banana</option>
+            <option>Cherry</option>
+            <option>Lemon</option>
+          </select>
+          <select id="groups" name="groups">
+            <optgroup label="fruits">
+              <option>Banana</option>
+              <option selected>Cherry</option>
+              <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+          </select>
+        </div>
+        <br />
+        <div class="multiple-choice-select-box">
+          <label for="multiple-choice-select-box"
+            >multiple-choice-select-box</label
+          >
+          <select multiple id="multi" name="multi">
+            <option>Banana</option>
+            <option>Cherry</option>
+            <option>Lemon</option>
+          </select>
+        </div>
+        <br />
+        <div class="autocomplete-box">
+          <label for="myFruit">What's your favorite fruit?</label>
+          <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+          <datalist id="mySuggestion">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blackberry</option>
+            <option>Blueberry</option>
+            <option>Lemon</option>
+            <option>Lychee</option>
+            <option>Peach</option>
+            <option>Pear</option>
+          </datalist>
+        </div>
+        <br />
+        <div class="autocomplete-box-fallback">
+          <label for="myFruit"
+            >What is your favorite fruit? (With fallback)</label
+          >
+          <input type="text" id="myFruits" name="fruit" list="fruitList" />
+          <datalist id="fruitList">
+            <label for="suggestion">or pick a fruit</label>
+            <select id="suggestion" name="altFruit">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Blackberry</option>
+              <option>Blueberry</option>
+              <option>Lemon</option>
+              <option>Lychee</option>
+              <option>Peach</option>
+              <option>Pear</option>
+            </select>
+          </datalist>
+        </div>
+      </div>
+      <br />
+      <div class="ui segment">
+        <h2>Checkable items</h2>
+        <div class="checkbox">
+          <label for="checkbox">checkbox</label>
+          <input
+            type="checkbox"
+            checked
+            id="checkbox"
+            name="checkbox"
+            value="carrots"
+          />
+        </div>
+        <br />
+        <div class="radio-button">
+          <label for="radio-button">radio button</label>
+          <input type="radio" checked id="soup" name="meal" />
+          <fieldset>
+            <legend>What is your favorite meal?</legend>
+            <ul>
+              <li>
+                <label for="soup">Soup</label>
+                <input
+                  type="radio"
+                  checked
+                  id="soups"
+                  name="meal"
+                  value="soup"
+                />
+              </li>
+              <li>
+                <label for="curry">Curry</label>
+                <input type="radio" id="curry" name="meal" value="curry" />
+              </li>
+              <li>
+                <label for="pizza">Pizza</label>
+                <input type="radio" id="pizza" name="meal" value="pizza" />
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <br />
+      <div class="ui segment">
+        <h2>Buttons</h2>
+        <div class="submit-button">
+          <button type="submit">
+            This a <br /><strong>submit button</strong>
+          </button>
+          <input type="submit" value="This is a submit button" />
+        </div>
+        <br />
+        <div class="reset-button">
+          <button type="reset">
+            This a <br /><strong>reset button</strong>
+          </button>
+          <input type="reset" value="This is a reset button" />
+        </div>
+        <br />
+        <div class="anonymous-button">
+          <button type="button">
+            This an <br /><strong>anonymous button</strong>
+          </button>
+          <input type="button" value="This is an anonymous button" />
+        </div>
+      </div>
+      <br />
+      <div class="ui segment">
+        <div class="advanced-form-widgets">
+          <h2>Advanced form widgets</h2>
+          <h3>Numbers</h3>
+          <h4>odd numbers 1 - 10</h4>
+          <input type="number" name="age" id="age" min="1" max="10" step="2" />
+        </div>
+        <br />
+        <div class="sliders">
+          <h3>Sliders</h3>
+          <label for="beans">How many beans can you eat?</label>
+          <input
+            type="range"
+            name="beans"
+            id="beans"
+            min="0"
+            max="500"
+            step="10"
+          />
+          <span class="beancount"></span>
+        </div>
+      </div>
+      <br />
+      <div class="ui segment">
+        <div class="date-and-time-picker">
+          <h3>Date and time picker</h3>
+          <h4>datetime-local</h4>
+          <input type="datetime-local" name="datetime" id="datetime" />
+          <br />
+          <h4>month</h4>
+          <input type="month" name="month" id="month" />
+          <br />
+          <h4>time</h4>
+          <input type="time" name="time" id="time" />
+          <br />
+          <h4>week</h4>
+          <input type="week" name="week" id="week" />
+          <br />
+          <h5>
+            All date and time control can be constrained using the
+            <code>min</code> and <code>max</code> attributes.
+          </h5>
+          <label for="myDate">When are you available this summer?</label>
+          <input
+            type="date"
+            name="myDate"
+            min="2013-06-01"
+            max="2013-08-31"
+            id="myDate"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="ui segment">
+        <h4>Color Picker</h4>
+        <input type="color" name="color" id="color" />
+        <br />
+      </div>
+      <div class="ui segment">
+        <div class="other-widgets">
+          <h2>Other Widgets</h2>
+          <h3>File Picker</h3>
+          <input type="file" name="file" id="file" accept="image/*" multiple />
+          <br />
+          <h3>Hidden Content</h3>
+          <input
+            type="hidden"
+            id="timestamp"
+            name="timestamp"
+            value="1286705410"
+          />
+          <br />
+          <h3>Image Button</h3>
+          <input
+            type="image"
+            alt="Click me!"
+            src="my-img.png"
+            width="80"
+            height="30"
+          />
+          <br />
+        </div>
+        <h3>Meters and progress bars</h3>
+        <h4>Progress</h4>
+        <progress max="100" value="75">75/100</progress>
+        <br />
+        <h4>Meter</h4>
+        <meter min="0" max="100" value="75" low="33" high="66" optimum="50"
+          >75</meter
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
