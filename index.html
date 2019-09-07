@@ -15,7 +15,9 @@
       <div class="ui segment">
         <h1>Form Widgets</h1>
       </div>
+
       <div class="ui segment">
+        <!--Text Input Fields-->
         <h2>Text input fields</h2>
         <div class="text-field-input">
           <label for="text-field-input">text field</label>
@@ -27,32 +29,44 @@
           />
         </div>
         <br />
+
+        <!--Email Input Fields-->
         <div class="email-input">
           <label for="email">email</label>
           <input type="email" id="email" name="email" multiple />
         </div>
         <br />
+
+        <!--Search Input Fields-->
         <div class="search-input">
           <label for="search-input">search</label>
           <input type="search" id="search" name="search" />
         </div>
         <br />
+
+        <!--Phone Number Input Fields-->
         <div class="phone-number-input">
           <label for="phone-number-input">phone number</label>
           <input type="tel" id="tel" name="tel" />
         </div>
         <br />
+
+        <!--URL Input Fields-->
         <div class="url-field-input">
           <label for="url-field-input">url field</label>
           <input type="url" id="url" name="url" />
         </div>
         <br />
+
+        <!--Text Area Input Fields-->
         <div class="text-area-input">
           <label for="text-area-input">text area</label>
           <textarea cols="30" rows="5"></textarea>
         </div>
       </div>
+
       <div class="ui segment">
+        <!--Drop Down Content-->
         <h2>Drop-down content</h2>
         <div class="drop-down-content">
           <label for="drop-down-content">drop down content</label>
@@ -75,6 +89,8 @@
           </select>
         </div>
         <br />
+
+        <!--Multiple Choice Select Box-->
         <div class="multiple-choice-select-box">
           <label for="multiple-choice-select-box"
             >multiple-choice-select-box</label
@@ -86,6 +102,8 @@
           </select>
         </div>
         <br />
+
+        <!--AutoComplete Box-->
         <div class="autocomplete-box">
           <label for="myFruit">What's your favorite fruit?(autocomplete)</label>
           <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
@@ -101,6 +119,8 @@
           </datalist>
         </div>
         <br />
+
+        <!--AutoComplete Fallback-->
         <div class="autocomplete-box-fallback">
           <label for="myFruit"
             >What is your favorite fruit? (With fallback)</label
@@ -121,7 +141,9 @@
           </datalist>
         </div>
       </div>
+
       <div class="ui segment">
+        <!--Checkable Items-->
         <h2>Checkable items</h2>
         <div class="checkbox">
           <label for="checkbox">checkbox</label>
@@ -133,6 +155,8 @@
             value="carrots"
           />
         </div>
+
+        <!--Radio Button-->
         <div class="radio-button">
           <label for="radio-button">radio button</label>
           <input type="radio" checked id="soup" name="meal" />
@@ -161,7 +185,9 @@
           </fieldset>
         </div>
       </div>
+
       <div class="ui segment">
+        <!--Submit Buttons-->
         <h2>Buttons</h2>
         <div class="submit-button">
           <button type="submit">
@@ -170,6 +196,8 @@
           <input type="submit" value="This is a submit button" />
         </div>
         <br />
+
+        <!--Reset Buttons-->
         <div class="reset-button">
           <button type="reset">
             This a <br /><strong>reset button</strong>
@@ -177,6 +205,8 @@
           <input type="reset" value="This is a reset button" />
         </div>
         <br />
+
+        <!--Anonymous Buttons-->
         <div class="anonymous-button">
           <button type="button">
             This an <br /><strong>anonymous button</strong>
@@ -184,7 +214,9 @@
           <input type="button" value="This is an anonymous button" />
         </div>
       </div>
+
       <div class="ui segment">
+        <!--Advanced Form Widgets-->
         <div class="advanced-form-widgets">
           <h2>Advanced form widgets</h2>
           <h3>Numbers</h3>
@@ -192,6 +224,8 @@
           <input type="number" name="age" id="age" min="1" max="10" step="2" />
         </div>
         <br />
+
+        <!--Sliders-->
         <div class="sliders">
           <h3>Sliders</h3>
           <label for="beans">How many beans can you eat?</label>
@@ -206,7 +240,9 @@
           <span class="beancount"></span>
         </div>
       </div>
+
       <div class="ui segment">
+        <!--Date and Time Picker-->
         <div class="date-and-time-picker">
           <h3>Date and time picker</h3>
           <h4>datetime-local</h4>
@@ -235,11 +271,15 @@
           />
         </div>
       </div>
+
       <div class="ui segment">
+        <!--Color Picker-->
         <h4>Color Picker</h4>
         <input type="color" name="color" id="color" />
       </div>
+
       <div class="ui segment">
+        <!--Other Widgets-->
         <div class="other-widgets">
           <h2>Other Widgets</h2>
           <h3>File Picker</h3>
@@ -253,6 +293,8 @@
             value="1286705410"
           />
           <br />
+
+          <!--Image Buttons-->
           <h3>Image Button</h3>
           <input
             type="image"
@@ -264,9 +306,13 @@
           <br />
         </div>
         <h3>Meters and progress bars</h3>
+
+        <!--Progress Bar-->
         <h4>Progress</h4>
         <progress max="100" value="75">75/100</progress>
         <br />
+
+        <!--Meter-->
         <h4>Meter</h4>
         <meter min="0" max="100" value="75" low="33" high="66" optimum="50"
           >75</meter
