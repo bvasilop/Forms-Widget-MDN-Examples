@@ -148,38 +148,70 @@
         <div class="checkbox">
           <label for="checkbox">checkbox</label>
           <input
+            aria-labelledby="checkbox checkbox"
+            role="checkbox"
+            aria-checked="true"
             type="checkbox"
             checked
             id="checkbox"
             name="checkbox"
             value="carrots"
+            tabindex="0"
           />
         </div>
 
         <!--Radio Button-->
         <div class="radio-button">
           <label for="radio-button">radio button</label>
-          <input type="radio" checked id="soup" name="meal" />
+          <input
+            aria-labelledby="radio-button soup"
+            role="checkbox"
+            type="radio"
+            checked
+            id="soup"
+            name="meal"
+            aria-checked="false"
+            tabindex="0"
+          />
           <fieldset>
             <legend>What is your favorite meal?</legend>
             <ul>
               <li>
                 <label for="soup">Soup</label>
                 <input
+                  role="checkbox"
+                  aria-labelledby="checkbox soups"
                   type="radio"
                   checked
                   id="soups"
                   name="meal"
                   value="soup"
+                  aria-checked="true"
                 />
               </li>
               <li>
                 <label for="curry">Curry</label>
-                <input type="radio" id="curry" name="meal" value="curry" />
+                <input
+                  role="checkbox"
+                  aria-labelledby="checkbox curry"
+                  type="radio"
+                  id="curry"
+                  name="meal"
+                  value="curry"
+                  aria-checked="false"
+                />
               </li>
               <li>
                 <label for="pizza">Pizza</label>
-                <input type="radio" id="pizza" name="meal" value="pizza" />
+                <input
+                  role="checkbox"
+                  aria-labelledby="checkbox pizza"
+                  aria-checked="false"
+                  type="radio"
+                  id="pizza"
+                  name="meal"
+                  value="pizza"
+                />
               </li>
             </ul>
           </fieldset>
@@ -190,19 +222,36 @@
         <!--Submit Buttons-->
         <h2>Buttons</h2>
         <div class="submit-button">
-          <button type="submit">
+          <button type="submit" role="button" aria-labelledby="button pizza">
             This a <br /><strong>submit button</strong>
           </button>
-          <input type="submit" value="This is a submit button" />
+          <input
+            type="submit"
+            value="This is a submit button"
+            role="button"
+            aria-labelledby="button submit-button"
+            id="submit-button"
+          />
         </div>
         <br />
 
         <!--Reset Buttons-->
         <div class="reset-button">
-          <button type="reset">
+          <button
+            type="reset"
+            role="button"
+            aria-labelledby="reset reset-button"
+            id="reset-button"
+          >
             This a <br /><strong>reset button</strong>
           </button>
-          <input type="reset" value="This is a reset button" />
+          <input
+            type="reset"
+            value="This is a reset button"
+            role="button"
+            aria-labelledby="reset reset-button"
+            id="reset-button2"
+          />
         </div>
         <br />
 
